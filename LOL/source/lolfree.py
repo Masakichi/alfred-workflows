@@ -29,7 +29,7 @@ def get_chams():
 
 def main(wf):
     detail_url_pre = "http://lol.qq.com/web201310/info-defail.shtml?id="
-    champs = wf.cached_data("champs", get_chams, max_age=3600)
+    champs = wf.cached_data("champs", get_chams, max_age=5)
     for champ in champs:
         wf.add_item(title=champs[champ][u"name"]+"-"+champs[champ][u"title"],
                     subtitle=detail_url_pre + champ,
