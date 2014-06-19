@@ -35,7 +35,7 @@ def main(wf):
                     subtitle=detail_url_pre + champ,
                     arg=detail_url_pre + champ,
                     valid=True,
-                    icon=get_champ_icon(champ))
+                    icon=ICON_WEB)#get_champ_icon(champ))
     wf.send_feedback()
 
 if __name__ == '__main__':
